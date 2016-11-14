@@ -27,7 +27,7 @@ cacheSolve <- function(x, ...) { ## function definition
    }
    ## if not being calculated
    data <- x$get()  ## assign data with the value of get function
-   invs <- inverse(data) ## inverse matrix and assign to invs
+   invs <- solve(data) ## inverse matrix and assign to invs
    x$setinverse(invs)  ## store the inversed matirx by setinverse function
    invs         ## Return a matrix that is the inverse of 'x'
 } ## function end
